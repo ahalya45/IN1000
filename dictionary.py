@@ -1,4 +1,4 @@
-
+" This is my basic learing of dictionaries"
 dict_data = {"Name": "A", "year":1995, "place":"Norway", "city": "Oslo", "status":"jobless"}
 # now we add new data items. How to do it?
 # for example telephone number{"TP": 44454546}
@@ -50,16 +50,12 @@ child2 = {"name" : "Tobias", "year" : 2007}
 child3 = {"name" : "Linus", "year" : 2011}
 myfamily = {"child1" : child1, "child2" : child2,"child3" : child3}
 "Access items in Nested Dictinaries"
+# example print the name child3:
+print(myfamily["child3"]["name"])
+# loop through the keys and values of all nested dictionaries
+for key1, value in myfamily.items():
+    print(key1)
+    for key2 in value:
+        print(key2 + ":",value[key2])
 
 
-"""
-hovedstad = {"Sverige":"Stockholm", "Norge":"Oslo"}
-land = input("Velg land i nordre Skandinavia: ")
-print(hovedstad[land])
-person = input("Konge: ")
-etterkommere = {"Oscar":"Haakon", "Haakon":"Olav", "Olav":"Harald"}
-
-barn = etterkommere[person]
-barnebarn = etterkommere[barn]
-
-print("Barnebarn: " + barnebarn)"""
